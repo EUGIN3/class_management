@@ -42,11 +42,12 @@ app.get("/users", (res, req) => {
 });
 
 app.get("/", (res, req) => {
-    res.send(`Server is up and running!`);
+    req.send(`Server is up and running!`);
 });
 
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
+
 
 module.exports = app;
