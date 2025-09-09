@@ -37,7 +37,7 @@ app.get("/users", (req, res) => {
 })
 
 
-app.get("/users", (res, req) => {
+app.post("/users", (res, req) => {
     res.status(200).json(users);
 });
 
@@ -51,3 +51,4 @@ app.listen(PORT, () => {
 
 
 module.exports = app;
+
